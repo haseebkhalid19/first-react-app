@@ -1,38 +1,95 @@
-.App {
+body {
+  background: #F8F8FF;
+  color: #646681;
+}
+
+.heading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topWrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-addTask {
+  background: #6370F0;
+  font-weight: bold;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-select {
+  background: #CCCDDF;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todoListWrapper {
+  background-color: #ECEDF6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.checkbox {
+  padding: 5px;
+  border-radius: 5px;
+  background: #ECEDF6;
+  border: none;
+  width: 20px;
+}
+
+.checkbox:checked~strong {
+  text-decoration: line-through;
+}
+
+.text-muted {
+  font-size: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+  padding: 0 10px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.ms-3 {
+  margin-inline-start: 10px;
+  padding: 10px;
+  background: #ECEDF6;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
 }
