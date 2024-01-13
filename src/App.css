@@ -1,5 +1,5 @@
 body {
-  background: #F8F8FF;
+  background: #f8f8ff;
   color: #646681;
 }
 
@@ -21,17 +21,19 @@ body {
 }
 
 .btn-addTask {
-  background: #6370F0;
+  background: #6370f0;
   font-weight: bold;
-  border-radius: 7px;
+  border-radius: 0 7px 7px 0;
   border: none;
   color: #fff;
   padding: 10px;
   cursor: pointer;
+  position: relative;
+  right: 10px;
 }
 
 .input-select {
-  background: #CCCDDF;
+  background: #cccddf;
   border: none;
   padding: 10px;
   width: 100px;
@@ -40,7 +42,7 @@ body {
 }
 
 .todoListWrapper {
-  background-color: #ECEDF6;
+  background-color: #ecedf6;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 7px;
@@ -50,12 +52,12 @@ body {
 .checkbox {
   padding: 5px;
   border-radius: 5px;
-  background: #ECEDF6;
+  background: #ecedf6;
   border: none;
   width: 20px;
 }
 
-.checkbox:checked~strong {
+.checkbox:checked ~ strong {
   text-decoration: line-through;
 }
 
@@ -88,8 +90,21 @@ ul li {
 .ms-3 {
   margin-inline-start: 10px;
   padding: 10px;
-  background: #ECEDF6;
+  background: #ecedf6;
   border-radius: 7px;
   cursor: pointer;
   border: none;
+}
+
+#add-task {
+  height: 34px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background: #cccddf;
+}
+
+.cancel {
+  text-decoration: line-through;
+  color: red;
 }
